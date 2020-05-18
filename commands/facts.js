@@ -1,0 +1,17 @@
+module.exports = {
+    name : 'facts',
+    description : 'Selects random facts from list.',
+    execute(message) {
+        let _facts = ["Only 3.6% of people over 65 years old are in nursing homes. Elderly men are likely to live with a spouse while elderly women are more likely to live alone.",
+        "4 in 5 older adults will battle at least one chronic condition or illness such as heart disorders, arthritis, or osteoporosis. 50% will battle at least two.",
+        "By age 75, about 1 in 3 men and 1 in 2 women don't get ANY physical activity.",
+        "While fatal crash rates increase starting at age 75, older drivers' crash rates have fallen faster than the crash rates of middle-aged drivers. One of the reasons is that older drivers tend to limit their driving during bad weather and at night.",
+        "The ratio of women to men over 65 years old is 100 to 76. The ratio of women to men over 85 years old is 100 to 49.",
+        "People over 75 years old visit the doctor 3 times more often than people 22 to 44 years old.",
+        "We are born with 350 bones in our skeleton. Over the course of time and during our aging process, our bones fuse together leaving us with 206 bones as adults.",
+        "Due to advancements in health care and technology, people are living longer. By the year 2040 the population of seniors over 85 is expected to triple from 5.7 million to 14.1 million.",
+        "Our sleeping patterns change as we age: we get tired earlier and wake up earlier."];
+        var index = Math.floor(Math.random() * _facts.length);
+        message.channel.send(_facts[index]);
+    }
+}

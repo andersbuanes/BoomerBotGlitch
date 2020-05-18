@@ -1,0 +1,18 @@
+{
+    "commands" : [
+        {
+            "poke" : "Poke another user. :point_right:",
+            "wave" : "Wave at another user. :wave:",
+            "1337" : "Translate a message to 1337",
+            "binary" : "Translate a message to binary."
+        }
+    ],
+    "examples" : [
+        {
+            "poke_examples" : "poke @somebody",
+            "wave_examples" : "wave @somebody",
+            "1337_examples" : "1337 Hello there",
+            "binary_examples" : "binary Hello there"
+        }
+    ]
+}
